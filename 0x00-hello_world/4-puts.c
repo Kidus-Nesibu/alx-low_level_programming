@@ -1,6 +1,7 @@
 #include <stdio.h>
-/***
- this is betty styles comment
+/**
+ * main-Entry
+ * Return: Always 0
  */
 int main (void)
 {
