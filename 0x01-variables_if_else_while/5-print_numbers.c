@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int number = 0;
+	int number[11];
 
 	while (number < 10)
 	{
