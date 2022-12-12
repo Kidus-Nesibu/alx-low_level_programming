@@ -8,19 +8,17 @@ int main(void)
 	char alphabet;
 	int number;
 
-	number = 0;
+	alphabet = 'a';
 	while (number < 10)
 	{
 		putchar(number + '0');
-	       	number++;
+		number++;
 	}
-	while (alphabet < 'g')
+	while (alphabet <= 'f')
 	{
 		putchar(alphabet);
 		alphabet++;
 	}
-		putchar('\n');
-	
+	putchar('\n');
 	return (0);
-
 }
