@@ -13,11 +13,11 @@ int main(void)
 		lower++;
 		if (lower == 'e')
 		{
-			continue;
+			lower++;
 		}
 		else if (lower == 'q')
 		{
-			continue;
+			lower++;
 		}
 	}
 	putchar('\n');
