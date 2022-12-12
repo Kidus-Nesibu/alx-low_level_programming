@@ -12,4 +12,5 @@ int main(void)
 		printf("%d", number);
 		number++;
 	}
+	return (0);
 }
