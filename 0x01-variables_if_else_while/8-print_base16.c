@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	int number = 0;
 	char alphabet = 'a';
+	int number = 0;
 
 	while (number < 10)
 	{
