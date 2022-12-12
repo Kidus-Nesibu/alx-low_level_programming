@@ -7,7 +7,7 @@ int main(void)
 {
 	char reverse = 'z';
 
-	while (reverse > 'a')
+	while (reverse >= 'a')
 	{
 		putchar(reverse);
 		reverse--;
