@@ -5,20 +5,22 @@
  */
 int main(void)
 {
-	char alphabet = 'a';
-	int number = 0;
+	char alphabet;
+	int number;
 
+	number = 0;
 	while (number < 10)
 	{
-		putchar(number);
-		number++;
-		while (alphabet < 'g')
-		{
-			putchar(alphabet);
-			alphabet++;
-		}
-		putchar('\n');
+		putchar(number + '0');
+	       	number++;
 	}
+	while (alphabet < 'g')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
+		putchar('\n');
+	
 	return (0);
 
 }
