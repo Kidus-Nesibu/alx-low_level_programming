@@ -3,37 +3,31 @@
  * main - Entry
  * Return: Always 0
  */
-int main (void)
+int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
+	int n;
+	int j;
 
-	while (a= 48; a < 58; a++)
+	for (i = 48; i < 58; i++)
 	{
-		for (b = 48; b < 58; b++)
+		for (n = 48; n < 58; n++)
 		{
-			if (b < a)
+			if (n > i)
 			{
-				for (c = 48; c < 58; c++)
+				putchar(i);
+				putchar(n);
+				putchar(j);
+				if (i == 55 && n == 56 && j == 57)
 				{
-					if (c > b)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(c);
-						if (a == 55 && b == 56 && c == 57)
-						{
-							break;
-						}
-
-						putchar(',');
-						putchar(' ');
-					}
+					break;
 				}
+
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
+	putchar('\n');
 }
