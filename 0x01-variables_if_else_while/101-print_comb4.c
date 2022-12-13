@@ -9,7 +9,7 @@ int main (void)
 	int b;
 	int c;
 
-	while ( a = 48; a < 58; a++)
+	while (a= 48; a < 58; a++)
 	{
 		for (b = 48; b < 58; b++)
 		{
@@ -22,7 +22,7 @@ int main (void)
 						putchar(a);
 						putchar(b);
 						putchar(c);
-						if (a == 55 && n == 56 && c == 57)
+						if (a == 55 && b == 56 && c == 57)
 						{
 							break;
 						}
