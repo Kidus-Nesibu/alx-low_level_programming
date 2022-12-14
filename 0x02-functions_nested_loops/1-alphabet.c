@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	char alpha = 'a';
+	char C = 'a';
 
-	while (alpha <= 'z')
+	while (C <= 'z')
 	{
-		putchar(alpha);
-		alpha++;
+		putchar('C');
+		C++;
 	}
 	return (0);
 }
