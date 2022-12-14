@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - displays _putchar
  * Return: Always 0
