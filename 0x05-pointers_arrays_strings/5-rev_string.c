@@ -1,24 +1,22 @@
 #include "main.h"
 /**
- * rev_string - reserv string
- * @s: parameter
+ * rev_string - reverse a string
+ * @s: input
+ * Return: string in reverse
  */
-void rev _string(char *s)
+void rev_string(char *s)
 {
-	char tmp;
-	int i, length1, length2;
+	char rv = s[0];
+	int c = 0;
+	int i;
 
-	length1 = 0;
-	length2 = 0;
-
-	while (s[length1] != '\0')
-		length1++;
-	length2 = length1 - 1;
-	for (i = 0; i < length1 / 2; i++)
+	while (s[c] != '\0')
+		c++;
+	for (i = 0; i < c; i++)
 	{
-		tmp = s[i];
-		s[i] =  s[length2];
-		s[length2] = tmp;
-		length2 -= 1;
+		c--;
+		rv = s[i];
+		s[i] = s[c];
+		s[c] = rv;
 	}
 }
