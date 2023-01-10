@@ -1,2 +1,3 @@
 #!/bin/bash
-ar -rcs libball.a *.c
+gcc -c *.c
+ar -rcs libball.a *.o
