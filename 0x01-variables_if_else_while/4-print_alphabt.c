@@ -1,25 +1,15 @@
-#include <stdio.h>
-/**
- * main - Entry
- * Return: Always 0
- */
-int main(void)
+#include<stdio.h>
+int main ()
 {
-	char lower = 'a';
-
-	while (lower <= 'z')
+	int c;
+	for(c='a';c<='z';c++)
 	{
-		putchar(lower);
-		lower++;
-		if (lower == 'e')
+		if (c=='q'||c=='e')
 		{
-			lower++;
+			continue;
 		}
-		else if (lower == 'q')
-		{
-			lower++;
-		}
+		putchar(c);
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
