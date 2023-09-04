@@ -5,7 +5,7 @@
  * @argv: argument value
  * Return: 0 if success
  */
-int main(int argc, char *argv[])
+int main(int argc, _attribute_((char *argv[])))
 {
 	printf("%d", argc - 1);
 	printf("\n");
