@@ -1,5 +1,5 @@
-#include<stdlib.h>
 #include"main.h"
+#include<stdlib.h>
 /**
  * create_array - create array of character
  * @size: unsigned integer
@@ -8,8 +8,8 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	int i;
-
+	unsigned int i;
+	
 	if (size == 0)
 	{
 		return (NULL);
