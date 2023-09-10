@@ -1,0 +1,31 @@
+#include<stdlib.h>
+#include"main.h"
+/*
+ * create_array - creates array and intialize it with character
+ * @size: size of the array
+ * @char c: characther that the array will be initialized with
+ * @i; it is the loop counter to intialize the array with a character
+ * Return: Null if size is 0 or
+ * the malloc fails to assing addres array if the code succed
+ */
+char *create_array(unsigned int size, char c)
+{
+	int i;
+
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	char *array = malloc(sizeof(char) * size);
+
+	if (array == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		*array = c;
+
+	}
+	return (array);
+}
