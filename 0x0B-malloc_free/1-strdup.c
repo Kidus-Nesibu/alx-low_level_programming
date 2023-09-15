@@ -2,6 +2,7 @@
 #include<stdlib.h>
 /**
  * _strdup - allocates a memory for and copies it there
+ * @str: a pointer that stor a copy of string literal
  * Return: ptr if sucess
  */
 char *_strdup(char *str)
