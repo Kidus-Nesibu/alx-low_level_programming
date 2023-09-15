@@ -15,8 +15,12 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (length = 0; str[length] != '\0'; length++)
-	ptr = malloc(sizeof(char) * length);
+	length = 1;
+	while(length != '\0';)
+	{
+		length++;
+	}
+	ptr = malloc(sizeof(char) * length + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);
