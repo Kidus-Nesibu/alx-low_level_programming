@@ -8,19 +8,20 @@
 char *_strdup(char *str)
 {
 	int i;
-	int length;
 	char *ptr;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	length = 1;
-	while(length != '\0')
+	int length = 1;
+
+	while (length != '\0')
 	{
 		length++;
 	}
-	ptr = malloc(sizeof(char) * length + 1);
+	length++;
+	ptr = malloc(sizeof(char) * length);
 	if (ptr == NULL)
 	{
 		return (NULL);
