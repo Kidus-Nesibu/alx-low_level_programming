@@ -15,8 +15,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	length = 1;
-
 	for (i = 0; str[length] != '\0'; i++)
 	{
 		;
@@ -30,9 +28,6 @@ char *_strdup(char *str)
 	{
 		ptr[i] = str[i];
 	}
-	if (i == length)
-	{
-		ptr[i] = '\0';
-	}
+	ptr[i] = '\0';
 	return (ptr);
 }
