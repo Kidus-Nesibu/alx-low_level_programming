@@ -1,26 +1,19 @@
 #include "main.h"
 
 /**
-* _strncpy - copy one string to other
+* _puts - prints recived string with new line
 *
-* @dest: destination string
-* @src: starting string
-* @n: limiter
-*
-* Return: result of dest
+* @str: string a new line will be added on
 */
 
-char *_strncpy(char *dest, char *src, int n)
+void _puts(char *str)
 {
-	int i;
+	int counter = 0;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	while (str[counter] != '\0')
 	{
-		dest[i] = src[i];
+		_putchar(str[counter]);
+		counter++;
 	}
-	for ( ; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-	return (dest);
+	_putchar('\n');
 }
