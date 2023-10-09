@@ -13,6 +13,10 @@ void print_dog(struct dog *d)
 		{
 			printf("nil\n");
 		}
+		else if (d->age == 0)
+		{
+			printf("nil\n");
+		}
 		else
 		{
 			printf("Name: %s\n", (*d).name);
