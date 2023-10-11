@@ -1,12 +1,10 @@
 #include<stdio.h>
 /**
  * main - start of a prog
- * @argc: argument count
- * @argv: argument value
  * Return: 0 when success
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", __FILE__);
 	return (0);
 }
