@@ -4,7 +4,7 @@
  * @separator: comma
  * @n: arguments
  * Return: void
-g*/
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(args, char *);
 		if (str == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 			printf("%s", separator);
 		}
 		else
