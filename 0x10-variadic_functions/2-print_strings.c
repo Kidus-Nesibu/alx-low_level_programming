@@ -4,7 +4,7 @@
  * @separator: comma
  * @n: arguments
  * Return: void
- */
+g*/
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 		{
 			printf("%s", str);
-			if (i < n - 1)
+			if (i < n - 1 && separator != NULL)
 			{
 				printf("%s", separator);
 			}
