@@ -1,4 +1,6 @@
 #include"lists.h"
+#include<stdio.h>
+#include<stdlib.h>
 /**
  * print_list - count and print nodes
  * @h: struct header
