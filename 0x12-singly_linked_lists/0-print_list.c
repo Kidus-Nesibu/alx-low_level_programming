@@ -6,7 +6,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int count = 0;
+	size_t count = 0;
 	const list_t *hold;
 
 	hold = h;
