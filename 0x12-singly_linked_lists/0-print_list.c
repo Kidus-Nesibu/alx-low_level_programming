@@ -2,14 +2,14 @@
 #include<stdio.h>
 
 /**
- * print_list - print elements of linked list
- * @h: pointer to list
- * Return: int
+ * print_list - print nodes
+ * @h: head pointer
+ * Return: count
  */
 
 size_t print_list(const list_t *h)
 {
-	unsigned int i = 0;
+	unsigned int count = 0;
 	const list_t *ptr;
 
 	ptr = h;
@@ -19,8 +19,8 @@ size_t print_list(const list_t *h)
 			printf("[%u] %s\n", 0, "(nil)");
 		else
 			printf("[%u] %s\n", ptr->len, ptr->str);
-		i++;
+		count++;
 		ptr = ptr->next;
 	}
-	return (i);
+	return(count);
 }
