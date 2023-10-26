@@ -2,11 +2,11 @@
 #include<stdio.h>
 
 /**
- * print_list - prints the list
+ * print_list - print elements on a singly linked list
  *
- * @h: is the head pointer
+ * @h: pointer to list
  *
- * Return: count
+ * Return: int
  */
 
 size_t print_list(const list_t *h)
