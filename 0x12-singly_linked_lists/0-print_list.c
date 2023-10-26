@@ -3,9 +3,7 @@
 
 /**
  * print_list - print elements on a singly linked list
- *
  * @h: pointer to list
- *
  * Return: int
  */
 
