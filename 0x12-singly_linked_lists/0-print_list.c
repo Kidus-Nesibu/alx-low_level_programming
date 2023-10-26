@@ -2,7 +2,9 @@
 #include<stdio.h>
 /**
  * print_list - prints the list
+ *
  * @h: is the head pointer
+ *
  * Return: count
  */
 size_t print_list(const list_t *h)
