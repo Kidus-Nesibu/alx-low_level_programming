@@ -1,5 +1,5 @@
-#include "lists.h"
-#include <stdio.h>
+#include"lists.h"
+#include<stdio.h>
 
 /**
  * print_list - print elements of linked list
@@ -9,8 +9,8 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *ptr;
 	unsigned int i = 0;
+	const list_t *ptr;
 
 	ptr = h;
 	while (ptr)
