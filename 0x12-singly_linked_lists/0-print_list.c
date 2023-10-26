@@ -12,7 +12,7 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *ptr;
-	unsigned int count = 0;
+	unsigned int i = 0;
 
 	ptr = h;
 	while (ptr)
@@ -24,5 +24,5 @@ size_t print_list(const list_t *h)
 		i++;
 		ptr = ptr->next;
 	}
-	return (count);
+	return (i);
 }
