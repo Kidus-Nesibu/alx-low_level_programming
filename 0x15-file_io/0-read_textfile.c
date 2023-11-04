@@ -1,4 +1,10 @@
 #include"main.h"
+/**
+ * read_textfile - reads from another file
+ * @filename: the name of the file to be read from
+ * @letters: the number of letters int the file
+ * Return: count of the write
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
