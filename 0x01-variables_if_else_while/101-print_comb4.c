@@ -1,33 +1,29 @@
 #include <stdio.h>
-/**
- * main - Entry
- * Return: Always 0
- */
+
 int main(void)
 {
-	int i;
-	int n;
-	int j;
+    int i, j, k;
 
-	for (i = 48; i < 58; i++)
-	{
-		for (n = 48; n < 58; n++)
-		{
-			if (n > i)
-			{
-				putchar(i);
-				putchar(n);
-				putchar(j);
-				if (i == 55 && n == 56 && j == 57)
-				{
-					break;
-				}
+    for (i = 0; i <= 7; i++)
+    {
+        for (j = i + 1; j <= 8; j++)
+        {
+            for (k = j + 1; k <= 9; k++)
+            {
+                putchar(i + '0');
+                putchar(j + '0');
+                putchar(k + '0');
 
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	return (0);
-	putchar('\n');
+                if (!(i == 7 && j == 8 && k == 9))
+                {
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
+    }
+
+    putchar('\n');
+
+    return 0;
 }
