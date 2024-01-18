@@ -1,3 +1,4 @@
+#include<stdlib.h>
 #include"dog.h"
 /**
  * init_dog - intializes struct dog
@@ -8,8 +9,6 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog my_dog;
-
 	if (d != NULL)
 	{
 		d->name = "poppy";
