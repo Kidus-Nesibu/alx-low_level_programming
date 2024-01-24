@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - prints possible commbination of two numbers
+ * main - prints possible commbination of two numbers without reptetion
  * Return: 0 if the program runs succesfully
  */
 int main(void)
