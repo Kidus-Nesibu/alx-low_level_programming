@@ -1,4 +1,8 @@
 #include<stdio.h>
+/**
+ * main - prints three combinationof numbers
+ * Return: 0 if the program runs succesfully
+ */
 int main(void)
 {
 	int i, j, k;
@@ -10,17 +14,16 @@ int main(void)
 			for (k = 2; k <= 9; k++)
 			{
 				if (i != j && j != k && i < j && j < k)
-                       		 {
-                                	putchar(i + '0');
-                                	putchar(j + '0');
+				{
+					putchar(i + '0');
+					putchar(j + '0');
 					putchar(k + '0');
-                                	if (i != 7 || j != 8 || k != 9)
-                                	{
-                                        	putchar(',');
-                                        	putchar(' ');
-                                	}
-                        	}
-
+					if (i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
