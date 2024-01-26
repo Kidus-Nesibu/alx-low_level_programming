@@ -1,21 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always
+ * main - prints possible commbination of numbers
+ * Return: 0 if the program runs succesfully
  */
 int main(void)
 {
-	int number;
+	int n;
 
-	for (number = 0; number < 10; number++)
+	for (n = 0; n <= 9; n++)
 	{
-		putchar(number + '0');
-		if (number < 9)
+		putchar(n + '0');
+		if (n != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

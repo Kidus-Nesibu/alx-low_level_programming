@@ -1,17 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always
+ * main - displays lower case alphabet in reverse order
+ * Return: 0 if the program runs succesfully
  */
 int main(void)
 {
-	char reverse = 'z';
+	char c;
 
-	while (reverse >= 'a')
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		putchar(reverse);
-		reverse--;
+		putchar(c);
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

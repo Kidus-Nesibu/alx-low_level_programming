@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always
+ * main - displays number using the puchar function
+ * Return: 0 if the program runs successfully
  */
 int main(void)
 {
-	int number;
+	int n;
 
-	for (number = 0; number < 10; number++)
-		putchar(number + '0');
-	putchar('\n');
+	for (n = 0; n <= 9; n++)
+	{
+		putchar(n + '0');
+	}
+	putchar(10);
 	return (0);
 }

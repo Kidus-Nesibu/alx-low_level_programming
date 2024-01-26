@@ -1,29 +1,32 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - prints diff combination of 3 num
- * Return: 0
-*/
+ * main - prints three combinationof numbers
+ * Return: 0 if the program runs succesfully
+ */
 int main(void)
 {
 	int i, j, k;
 
-	for (i = 0; i <= 7; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = i + 1; j <= 8; j++)
+		for (j = 1; j <= 9; j++)
 		{
-			for (k = j + 1; k <= 9; k++)
+			for (k = 2; k <= 9; k++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (!(i == 7 && j == 8 && k == 9))
+				if (i != j && j != k && i < j && j < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

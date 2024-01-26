@@ -1,22 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main-Entry
- * Return: Always
+ * main - prints alphabet in small and capital letter
+ * Return: 0 if the run succesfully
  */
 int main(void)
 {
-	char lower = 'a', upper = 'A';
+	char c;
 
-	while (lower <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(lower);
-		lower++;
+		putchar(c);
 	}
-	while (upper <= 'Z')
+	for (c = 'A'; c <= 'Z'; c++)
 	{
-		putchar(upper);
-		upper++;
+		putchar(c);
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

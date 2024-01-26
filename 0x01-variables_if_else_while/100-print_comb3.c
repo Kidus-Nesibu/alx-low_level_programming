@@ -1,26 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always 0
+ * main - prints possible commbination of two numbers without reptetion
+ * Return: 0 if the program runs succesfully
  */
 int main(void)
 {
-	int tens;
-	int ones;
+	int i, j;
 
-	for (tens = 0; tens <= 9; tens++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (ones = tens + 1; ones <= 9; ones++)
+		for (j = 1; j <= 9; j++)
 		{
-			putchar(tens + '0');
-			putchar(ones + '0');
-			if (tens < 8)
+			if (i != j && i < j)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				if (j != 9 || i != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always
+ * main - prints the number 0 to 9
+ * Return: 0 if the program runs succesfully
  */
 int main(void)
 {
-	int number;
+	int n;
 
-	for (number = 0; number < 10; number++)
-		printf("%d", number);
-	printf("\n");
+	for (n = 0; n <= 9; n++)
+	{
+		printf("%d", n);
+	}
+	putchar(10);
 	return (0);
 }

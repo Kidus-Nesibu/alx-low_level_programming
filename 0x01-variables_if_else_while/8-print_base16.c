@@ -1,24 +1,23 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry
- * Return: Always 0
+ * main - prints hexa decimal values
+ * Return: 0 if the program runs succesfully
  */
 int main(void)
 {
-	char alphabet;
-	int number;
+	int n;
 
-	alphabet = 'a';
-	while (number < 10)
+	for (n = 0; n <= 15; n++)
 	{
-		putchar(number + '0');
-		number++;
+		if (n <= 9)
+		{
+			putchar(n + '0');
+		}
+		else
+		{
+			putchar(n - 10 + 'a');
+		}
 	}
-	while (alphabet <= 'f')
-	{
-		putchar(alphabet);
-		alphabet++;
-	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
