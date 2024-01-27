@@ -1,7 +1,7 @@
 #include"main.h"
 void times_table(void)
 {
-	int i, j, n;
+	int i, j, n, last, first;
 
 	for (i = 0; i <= 9; i++)
 	{
