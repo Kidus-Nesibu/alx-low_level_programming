@@ -6,7 +6,7 @@
 asdi **/
 int _isalpha(int c)
 {
-	if ((c >= 'a' || c <= 'z') || (c >= 'A' || c <= 'z'))
+	if ((c >= 'A' || c <= 'Z') || (c >= 'a' || c <= 'Z'))
 	{
 		return (1);
 	}
