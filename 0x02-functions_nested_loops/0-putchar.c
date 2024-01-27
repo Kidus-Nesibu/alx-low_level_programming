@@ -10,12 +10,12 @@ int main(void)
 
 	str = "_putchar";
 
-	while(str)
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str++;
 	}
-	_putchar(10);
+	_putchar('\n');
 
 	return (0);
 }
