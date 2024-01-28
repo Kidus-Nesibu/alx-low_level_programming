@@ -22,14 +22,7 @@ void print_to_98(int n)
 		
 		for (i = n; i <= 98; i++)
 		{
-			if (i < 0)
-			{
-				printf("%d", i);
-			}
-			else
-			{
-				printf("%d", i);
-			}
+			printf("%d", i);
 			if (i != 98)
 			{
 				_putchar(',');
