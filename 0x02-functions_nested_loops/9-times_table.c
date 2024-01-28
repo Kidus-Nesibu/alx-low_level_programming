@@ -19,7 +19,6 @@ void times_table(void)
 				if (n != 81)
 				{
 					_putchar(',');
-					_putchar(' ');
 				}
 			}
 			else
