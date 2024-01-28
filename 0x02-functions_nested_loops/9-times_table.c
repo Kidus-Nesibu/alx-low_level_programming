@@ -16,9 +16,8 @@ void times_table(void)
 
 				_putchar(first + '0');
 				_putchar(last + '0');
-				if (n != 81)
+				if (n != 81 && j < 9)
 				{
-					_putchar(' ');
 					_putchar(',');
 					_putchar(' ');
 				}
@@ -26,7 +25,7 @@ void times_table(void)
 			else
 			{
 				_putchar(n + '0');
-				if (n != 81)
+				if (n != 81 && j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
