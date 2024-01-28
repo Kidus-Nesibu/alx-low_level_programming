@@ -21,6 +21,12 @@ void times_table(void)
 			{
 				_putchar(n + '0');
 			}
+			if (n != 81)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 		}
 	}
 }
