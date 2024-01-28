@@ -13,7 +13,7 @@ void times_table(void)
 			{
 				last = n % 10;
 				first = n / 10;
-				_putchar(' ');
+
 				_putchar(first + '0');
 				_putchar(last + '0');
 				if (j < 9)
@@ -27,8 +27,8 @@ void times_table(void)
 				_putchar(n + '0');
 				if (j < 9)
 				{
-					_putchar(',');
 					_putchar(' ');
+					_putchar(',');
 					_putchar(' ');
 				}
 			}
