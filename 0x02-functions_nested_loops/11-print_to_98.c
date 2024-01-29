@@ -1,5 +1,9 @@
 #include"main.h"
 #include<stdio.h>
+/**
+ * print_to_98 - prints number starting from n to 98
+ * @n: the given number to start printing from
+ **/
 void print_to_98(int n)
 {
 	int i;
@@ -15,9 +19,9 @@ void print_to_98(int n)
 		}
 		printf("\n");
 	}
-	else 
+	else
 	{
-		
+
 		for (i = n; i <= 98; i++)
 		{
 			if (i != 98)
