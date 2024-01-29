@@ -34,7 +34,7 @@ void print_times_table(int n)
 	}
 }
 /**
- * print - prints numbers with more than one digit
+ * print - prints numbers with more than one digit 
  * @mult: the given number to be printed
  **/
 void print(int mult)
