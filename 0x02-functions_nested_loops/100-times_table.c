@@ -1,73 +1,90 @@
 #include"main.h"
-#include <stdio.h>
 /**
- * print_times_table - Print multiplication table up to n
- * @n: The number up to which the multiplication table is print
+ * print_times_table - print n times table
+ * @n: the given number to print the times table
  */
-
 void print_times_table(int n)
 {
-	int i, j, mult;
-
 	if (n <= 15 && n >= 0)
 	{
+		int i, j, mult;
+
 		for (i = 0; i <= n; i++)
 		{
 			for (j = 0; j <= n; j++)
 			{
 				mult = i * j;
-				print(mult);
+
+				if (mult <= 9)
+				{
+					if (j != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
+					ones(mult);
+				}
+				else if (mult > 9 && mult < 100)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					tens(mult);
+				}
+				else if (mult >= 100)
+				{
+					_putchar(' ');
+					hundreds(mult);
+				}
 
 				if (j != n)
 				{
-					print(mult);
 					_putchar(',');
 				}
-				else
-				{
-					print(mult);
-				}
 			}
-			_putchar('\n');
+			_putchar(10);
 		}
-		_putchar('\n');
 	}
 }
 /**
- * print - prints numbers with more than one digit
- * @mult: the given number to be printed
- **/
-void print(int mult)
+ * tens - print the tens place of mult
+ * @mult: the given number
+ */
+void tens(int mult)
 {
-	if (mult > 9)
-	{
-		int first, last;
+	int first, last;
 
-		last = mult % 10;
-		first = mult / 10;
+	last = mult % 10;
+	first = mult / 10;
 
-		_putchar(' ');
-		_putchar(first + '0');
-		_putchar(last + '0');
-	}
-		else if (mult > 99)
-		{
-			int first, second, last;
-
-			first = mult / 100;
-			second = ((mult % 100) / 10);
-			last = mult % 10;
-			_putchar(' ');
-			_putchar(first + '0');
-			_putchar(second + '0');
-			_putchar(last + '0');
-		}
-	else
-	{
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(mult + '0');
-	}
+	_putchar(first + '0');
+	_putchar(last + '0');
 }
+/**
+ * hundreds - print the hundred place of mult
+ * @mult: the given number
+ */
+void hundreds(int mult)
+{
+	int first, second, last;
 
+	last = mult % 10;
+	second = (mult % 100) / 10;
+	first = mult / 100;
+
+	_putchar(first + '0');
+	_putchar(second + '0');
+	_putchar(last + '0');
+}
+/**
+ * ones - print the ones place of mult
+ * @mult: the given number
+ */
+void ones(int mult)
+{
+	int last;
+
+	last = mult % 10;
+
+	_putchar(last + '0');
+}
