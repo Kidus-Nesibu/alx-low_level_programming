@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i == 0)
 		{
-			printf("%.Lf, %.Lf, ", num1, num3);
+			printf("%.Lf, %.Lf, ", num1, num2);
 		}
 		num3 = num1 + num2;
 		if (i == 47)
