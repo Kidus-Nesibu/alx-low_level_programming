@@ -14,3 +14,4 @@ void print_times_table(int n);
 void ones(int mult);
 void tens(int mult);
 void hundreds(int mult);
+void print(int i, int j);
