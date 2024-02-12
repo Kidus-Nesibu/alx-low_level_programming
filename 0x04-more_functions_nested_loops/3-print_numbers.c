@@ -1,4 +1,7 @@
 #include"main.h"
+/**
+ * print_numbers - print numbers 1 - 9
+ */
 void print_numbers(void)
 {
 	int i = 0;
