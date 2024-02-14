@@ -10,6 +10,6 @@ void print_line(int n)
 			_putchar('_');
 			i++;
 		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
