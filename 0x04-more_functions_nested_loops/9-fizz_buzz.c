@@ -10,7 +10,11 @@ int main(void)
 
 	while (i != 101)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FIZZBUZZ");
+		}
+		else if (i % 3 == 0)
 		{
 			printf("FIZZ");
 		}
