@@ -3,14 +3,18 @@ void print_line(int n)
 {
 	int i = 1;
 	
-	if (n > 0)
+	if (n < 0 || n == 0)
 	{
-		while (i < n)
-		{
-			_putchar('_');
-			i++;
-		}
 		_putchar(10);
 	}
-	_putchar(10);
+	while (i <= n)
+	{
+		_putchar('_');
+		if (i == n)
+		{
+			_putchar(10);
+			break;
+		}
+		i++;
+	}
 }
