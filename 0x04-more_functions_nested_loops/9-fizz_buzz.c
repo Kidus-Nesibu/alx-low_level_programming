@@ -1,4 +1,3 @@
-#include"main.h"
 #include<stdio.h>
 /**
  * main - print 1 upto 100
