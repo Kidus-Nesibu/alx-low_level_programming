@@ -8,17 +8,21 @@ int main(void)
 	{
 		if (i % 3 == 0)
 		{
-			printf("FIZZ ");
+			printf("FIZZ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("BUZZ ");
+			printf("BUZZ");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+		}
+		if (i <  100)
+		{
+			printf(" ");
 		}
 		i++;
 	}
-	_putchar(10);
+	printf("\n");
 }
