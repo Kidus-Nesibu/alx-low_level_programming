@@ -1,4 +1,8 @@
 #include"main.h"
+/**
+ * print_diagonal - prints diagonal line
+ * @n: the numbers of backlash used
+ */
 void print_diagonal(int n)
 {
 	if (n <= 0)
