@@ -1,38 +1,31 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * print_diagonal - prints diagonal line
- * @n: the numbers of backlash used
+ * print_diagonal - prints a line in diagons
+ * @n: the number of itme sit should be printed
+ *
  */
 void print_diagonal(int n)
 {
-	if (n <= 0)
-	{
-		_putchar(10);
-	}
-
 	int i = 1, j;
-	while (i <= n)
+
+	if (n < 0 || n == 0)
+		_putchar('\n');
+
+	while (i <=  n)
 	{
-		if (n <= 0)
-		{
-			_putchar(10);
-			break;
-		}
 		j = 1;
 
 		while (j <= n)
 		{
 			if (i == j)
-			{
 				_putchar(92);
-			}
 			else if (i > j)
-			{
 				_putchar(' ');
-			}
 			j++;
 		}
-		_putchar(10);
+		_putchar('\n');
 		i++;
 	}
+
 }
