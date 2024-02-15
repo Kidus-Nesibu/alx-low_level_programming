@@ -1,32 +1,33 @@
-#include "main.h"
-
+#include"main.h"
 /**
- * print_diagonal - prints a line in diagons
- * @n: the number of itme sit should be printed
- *
+ * print_triangle - prints triangle using #
+ * @size: the size of the triangle to be printed
  */
 void print_triangle(int size)
 {
-        int i = 1, j;
+	if (size <= 0)
+	{
+		_putchar(10);
+	}
+	int i = 1;
 
-        if (size <= 0)
-                _putchar('\n');
+	while (i <= size)
+	{
+		int j = 1;
 
-        while (i <= size)
-        {
-                j = 1;
-
-                while (j <= size)
-                {
-                        if (i == j)
-                                _putchar('#');
-                        else if (i > j)
-                                _putchar(' ');
-                        j++;
-                }
-                _putchar('\n');
-                i++;
-        }
-
+		while (j <= size)
+		{
+			if (i + j <= size)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('#');
+			}
+			j++;
+		}
+		_putchar(10);
+		i++;
+	}
 }
-
