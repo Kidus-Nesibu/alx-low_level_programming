@@ -5,15 +5,18 @@
  */
 void print_triangle(int size)
 {
+	int i, j;
+
 	if (size <= 0)
 	{
 		_putchar(10);
 	}
-	int i = 1;
+
+	i = 1;
 
 	while (i <= size)
 	{
-		int j = 1;
+		j = 1;
 
 		while (j <= size)
 		{
