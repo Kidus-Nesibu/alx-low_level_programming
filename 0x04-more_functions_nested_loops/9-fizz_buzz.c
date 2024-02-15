@@ -33,5 +33,5 @@ int main(void)
 		i++;
 	}
 	printf("\n");
-	return (10);
+	return (0);
 }
