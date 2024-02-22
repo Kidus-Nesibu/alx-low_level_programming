@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * puts2 - puts char by skiping one 
+ * puts2 - puts char by skiping one
  * @str: char pointer
  */
 void puts2(char *str)
