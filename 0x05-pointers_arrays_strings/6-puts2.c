@@ -1,10 +1,21 @@
-#include"main.h"
+#include "main.h"
+
+/**
+ * puts2 - prints every other character starting from 1
+ * @str: pointer variable
+ * Return: nothing
+ */
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int i;
+
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
-		_putchar(*str);
-		str += 2;
+		if (i % 2 != 0)
+		{
+			continue;
+		}
+		_putchar(*(str + i));
 	}
 	_putchar(10);
 }
