@@ -1,11 +1,16 @@
 #include"main.h"
 void puts2(char *str)
 {
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
-		_putchar(*str);
-		str++;
-		str++;
+		if (i % 2 != 0)
+		{
+			continue;
+		}
+
+		_putchar(str[i]);
+		i++;
+		
 	}
 	_putchar(10);
 
