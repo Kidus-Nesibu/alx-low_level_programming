@@ -1,4 +1,8 @@
 #include"main.h"
+/**
+ * puts_half - prints the second half of the string
+ * @str: char pointer that is used as string
+ */
 void puts_half(char *str)
 {
 	int len = 0;
