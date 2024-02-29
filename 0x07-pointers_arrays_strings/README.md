@@ -9,22 +9,22 @@ Let me walk you through the structure of this project:
 ### 1. Source Code
 Inside the `src` directory, you'll find all the C source code files for this project. Each file is carefully named to reflect its purpose or the specific concept it covers.
 
-git clone <repository_url>
+`git clone <repository_url>`
 
 ### 2. Headers
 The `include` directory contains any header files used in the project. These headers might include function prototypes, macros, or other declarations necessary for the source code files to work seamlessly together.
 
-cd even-more-pointers-arrays-stringsi
+`cd even-more-pointers-arrays-stringsi`
 
 ### 3. Documentation
 Clear documentation is key to understanding and maintaining code. That's why I've included a `docs` directory, where you can find additional documentation related to the project. This documentation might include explanations of design decisions, usage instructions, or insights into complex algorithms or functions.
 
-make
+`make`
 	
 ### 4. Build Scripts
 At the root of the project, you'll find any build scripts or makefiles needed to compile the project. These scripts are designed to simplify the build process by automating compilation and linking tasks.
 
-./main
+`./main`
 
 ## Getting Started
 Excited to dive into this project? Here's how you can get started:
