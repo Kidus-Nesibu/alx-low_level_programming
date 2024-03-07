@@ -9,15 +9,39 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
+	dog_t *buchi;
+	int len = 0, len2 = 0, i;
 
-	new_dog = malloc(sizeof (dog_t) * 1);
-	if (new_dog == NULL)
+	buchi = malloc(sizeof(dog_t) * 1);
+	if (buchi == NULL)
 	{
 		return (NULL);
 	}
-	(*new_dog).name = name;
-	(*new_dog).age = age;
-	(*new_dog).owner = owner;
-	return (new_dog);
+	while (name[len] != '\0')
+		len++;
+	(*buchi).name = malloc(sizeof(char) * len + 1);
+	if ((*buchi).name == NULL)
+	{
+		free(buchi);
+	}
+	while (owner[len2] != '\0')
+		len2++;
+	(*buchi).owner = malloc(sizeof(char) * len2 + 1);
+	if ((*buchi).owner == NULL)
+	{
+		free(buchi);
+		free((*buchi).name);
+	}
+	for (i = 0; i < len; i++)
+	{
+		(*buchi).name[i] = name[i];
+	}
+	(*buchi).name[i] = '\0';
+	for (i = 0; i < len2; i++)
+	{
+		(*buchi).owner[i] = owner[i];
+	}
+	(*buchi).owner[i] = owner[i];
+	(*buchi).age = age;
+	return (buchi);
 }
