@@ -30,6 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if ((*buchi).owner == NULL)
 	{
 		free(buchi);
+		free((*buchi).owner);
 		free((*buchi).name);
 	}
 	for (i = 0; i < len; i++)
