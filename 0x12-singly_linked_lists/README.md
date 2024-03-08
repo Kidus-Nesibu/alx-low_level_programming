@@ -43,7 +43,7 @@ void traverse() {
         temp = temp->next;
     }
     printf("NULL\n");
-}
+}`
 Getting Started
 To use this implementation in your project, simply copy the provided code snippets and integrate them into your C program. Don't forget to include error handling and memory management as per your requirements.
 
