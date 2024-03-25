@@ -2,53 +2,61 @@
 #include <stdlib.h>
 
 /**
- * delete_dnodeint_at_index - Deletes the node at a given index of a
- *                            doubly linked list.
- * @head: Pointer to the head of the doubly linked list.
- * @index: Index of the node to be deleted (starting from 0).
+ * insert_dnodeint_at_index - Inserts a new node at a given position.
+ * @h: Pointer to the pointer to the head of the doubly linked list.
+ * @idx: Index where the new node should be added (starting from 0).
+ * @n: Value to be stored in the new node.
  *
- * Return: 1 if the deletion was successful, -1 if failed.
+ * Return: The address of the new node, or NULL if it failed.
  */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *current = *head;
-    dlistint_t *temp = NULL;
-    unsigned int i = 0;
+    dlistint_t *new_node, *current;
+    unsigned int i;
 
-    /* If the list is empty, return failure */
-    if (*head == NULL)
-        return -1;
+    if (h == NULL)  /* Check if the pointer to the head is NULL */
+        return NULL;
 
-    /* Special case: if the node to be deleted is the head node */
-    if (index == 0)
+    /* Allocate memory for the new node */
+    new_node = malloc(sizeof(dlistint_t));
+    if (new_node == NULL)
+        return NULL;
+
+    new_node->n = n;  /* Assign the value to the new node */
+    new_node->prev = NULL;
+    new_node->next = NULL;
+
+    /* Special case: if the new node is to be inserted at the beginning */
+    if (idx == 0)
     {
-        *head = current->next;
-        if (*head != NULL)
-            (*head)->prev = NULL;
-        free(current);
-        return 1;
+        new_node->next = *h;
+        if (*h != NULL)
+            (*h)->prev = new_node;
+        *h = new_node;
+        return new_node;
     }
 
+    current = *h;
     /* Traverse the list to find the node at the given index */
-    while (current != NULL && i < index)
+    for (i = 0; i < idx - 1 && current != NULL; i++)
     {
-        temp = current;
         current = current->next;
-        i++;
     }
 
-    /* If the index is out of range, return failure */
+    /* If the index is out of range, free the allocated memory and return NULL */
     if (current == NULL)
-        return -1;
+    {
+        free(new_node);
+        return NULL;
+    }
 
-    /* Update the links to bypass the node to be deleted */
-    temp->next = current->next;
+    /* Insert the new node at the given index */
+    new_node->next = current->next;
     if (current->next != NULL)
-        current->next->prev = temp;
+        current->next->prev = new_node;
+    current->next = new_node;
+    new_node->prev = current;
 
-    /* Free the memory allocated to the node */
-    free(current);
-
-    return 1;
+    return new_node;
 }
 
