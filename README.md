@@ -1,4 +1,4 @@
-# ALX Low-Level Programming
+# ALX Low-Level programming
 
 This repository contains my solutions for the ALX Low-Level Programming projects.
 
